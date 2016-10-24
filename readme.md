@@ -35,3 +35,24 @@ JSX is only a syntactic sugar it compiles to normal JS
 (this is because of the efficient re-rendering) - this should be unique
 - If you want to render an own component inside an other own component, you have to tell the outer component
 to render the inner component by return with { props.children }
+
+# Section 8 -
+## Flexbox
+- justifyContent: space-between: equalized space between element
+- justifyContent: space-around:
+- flexDirection: default is column, but you can change it to row for horizontal alignment
+
+## Images
+- the image is not filling the space by default like in html
+- you have to specify the width and height
+- there is a trick in flexbox to do it fluid
+
+## Scrolling
+- React Native does not behaves like browsers do
+- no scrolling by default on the View Component
+- ScrollView is needed
+- on the top view you need to place flex:1 to fill the entire device
+
+## Handling touch events
+- TouchableOpacity tag
+- onPress attribute on the touchable tag
